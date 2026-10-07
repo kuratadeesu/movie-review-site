@@ -1,7 +1,7 @@
 import { movies } from "./movies.js";
 
 function displayMovies(movieList) {
-  const movieGrid = document.querySelector("#movie-grid");
+  const movieGrid = document.querySelector("#movieGrid");
 
   if (!movieGrid) return;
 
