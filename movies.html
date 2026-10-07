@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>映画を探す | 50文字映画レビュー</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">50文字映画レビュー</a>
+
+    <nav class="nav">
+      <a href="movies.html">映画を探す</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+  <section class="page-header">
+    <div class="container">
+      <p class="section-label">MOVIES</p>
+      <h1>映画を探す</h1>
+      <p>気になる映画の50文字レビューを探してみよう。</p>
+    </div>
+  </section>
+
+
+  <section class="movie-list-section">
+    <div class="container">
+
+      <div class="filter-area">
+
+        <input
+          type="text"
+          id="movieSearch"
+          placeholder="映画タイトルを検索..."
+        >
+
+        <select id="genreFilter">
+          <option value="all">すべてのジャンル</option>
+          <option value="ドラマ">ドラマ</option>
+          <option value="SF">SF</option>
+          <option value="アクション">アクション</option>
+          <option value="コメディ">コメディ</option>
+          <option value="アニメ">アニメ</option>
+        </select>
+
+      </div>
+
+
+      <div id="movieGrid" class="movie-grid"></div>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+
+    <div>
+      <p class="footer-logo">50文字映画レビュー</p>
+      <p class="footer-copy">映画を、50文字で残す。</p>
+    </div>
+
+    <nav class="footer-nav">
+      <a href="about.html">About</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="contact.html">お問い合わせ</a>
+      <a href="terms.html">利用規約</a>
+    </nav>
+
+  </div>
+
+  <div class="container copyright">
+    © 2026 50文字映画レビュー
+  </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

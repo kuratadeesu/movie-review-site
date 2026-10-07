@@ -1,0 +1,694 @@
+/* =========================
+   Base
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    "Hiragino Kaku Gothic ProN",
+    "Yu Gothic",
+    YuGothic,
+    sans-serif;
+
+  color: #222;
+  background: #fff;
+  line-height: 1.8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: min(1100px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.site-header {
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.header-inner {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  opacity: 0.6;
+}
+
+
+/* =========================
+   Hero
+========================= */
+
+.hero {
+  background: #f5f5f2;
+  padding: 110px 0;
+}
+
+.hero-inner {
+  max-width: 1100px;
+}
+
+.hero-label,
+.section-label {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: #777;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(42px, 7vw, 80px);
+  line-height: 1.15;
+  letter-spacing: -0.05em;
+}
+
+.hero h1 span {
+  position: relative;
+}
+
+.hero-description {
+  margin: 30px 0;
+  color: #666;
+  font-size: 17px;
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 48px;
+  padding: 0 25px;
+
+  border: 0;
+  border-radius: 999px;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-primary {
+  color: #fff;
+  background: #222;
+}
+
+.btn-primary:hover {
+  opacity: 0.75;
+}
+
+
+/* =========================
+   Sections
+========================= */
+
+.search-section,
+.movies-section,
+.concept-section,
+.content-section,
+.review-section,
+.movie-detail-section {
+  padding: 90px 0;
+}
+
+.section-heading {
+  margin-bottom: 35px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: -0.04em;
+}
+
+.section-heading-row {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.text-link {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.text-link:hover {
+  opacity: 0.5;
+}
+
+
+/* =========================
+   Search
+========================= */
+
+.search-box {
+  display: flex;
+  max-width: 700px;
+}
+
+.search-box input {
+  flex: 1;
+  min-width: 0;
+  height: 54px;
+  padding: 0 20px;
+
+  border: 1px solid #ddd;
+  border-right: 0;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+
+.search-box input:focus {
+  border-color: #222;
+}
+
+.search-box button {
+  width: 100px;
+  border: 0;
+  border-radius: 0 8px 8px 0;
+
+  background: #222;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/* =========================
+   Movie Grid
+========================= */
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.movie-card {
+  cursor: pointer;
+}
+
+.movie-card:hover .movie-poster {
+  transform: translateY(-4px);
+}
+
+.movie-poster {
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #eee;
+  transition: 0.2s;
+}
+
+.movie-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-card h3 {
+  margin: 12px 0 4px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.movie-meta {
+  color: #888;
+  font-size: 13px;
+}
+
+.movie-rating {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+
+/* =========================
+   Concept
+========================= */
+
+.concept-section {
+  background: #f5f5f2;
+}
+
+.concept {
+  max-width: 700px;
+  margin-left: max(20px, calc((100% - 1100px) / 2));
+}
+
+.concept h2 {
+  margin: 0 0 25px;
+  font-size: clamp(30px, 5vw, 50px);
+  line-height: 1.3;
+  letter-spacing: -0.04em;
+}
+
+.concept p {
+  color: #666;
+}
+
+
+/* =========================
+   Page Header
+========================= */
+
+.page-header {
+  padding: 80px 0;
+  background: #f5f5f2;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: clamp(38px, 6vw, 60px);
+  letter-spacing: -0.05em;
+}
+
+.page-header p:last-child {
+  color: #666;
+}
+
+
+/* =========================
+   Filter
+========================= */
+
+.filter-area {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.filter-area input,
+.filter-area select {
+  height: 50px;
+  padding: 0 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+.filter-area input {
+  flex: 1;
+}
+
+.filter-area select {
+  width: 200px;
+}
+
+
+/* =========================
+   Movie Detail
+========================= */
+
+.movie-detail {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.movie-detail-poster {
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #eee;
+}
+
+.movie-detail-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-detail-info h1 {
+  margin: 0 0 10px;
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1.2;
+}
+
+.movie-detail-meta {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.movie-detail-rating {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.movie-synopsis {
+  color: #555;
+}
+
+
+/* =========================
+   Review
+========================= */
+
+.review-form {
+  max-width: 700px;
+  padding: 30px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background: #fafafa;
+}
+
+.review-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.review-form textarea {
+  width: 100%;
+  min-height: 140px;
+  padding: 15px;
+
+  resize: vertical;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  outline: none;
+}
+
+.review-form textarea:focus {
+  border-color: #222;
+}
+
+.review-form-footer {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 8px 0 25px;
+
+  color: #888;
+  font-size: 13px;
+}
+
+.star-rating {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 25px;
+}
+
+.star-rating button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+
+  color: #ccc;
+  font-size: 32px;
+
+  cursor: pointer;
+}
+
+.star-rating button.active {
+  color: #222;
+}
+
+.form-note {
+  margin-top: 15px;
+  color: #999;
+  font-size: 12px;
+}
+
+
+/* =========================
+   Existing Reviews
+========================= */
+
+.existing-reviews {
+  max-width: 700px;
+  margin-top: 70px;
+}
+
+.existing-reviews h3 {
+  margin-bottom: 25px;
+}
+
+.review-card {
+  padding: 25px;
+  border-top: 1px solid #eee;
+}
+
+.review-stars {
+  margin-bottom: 8px;
+}
+
+.review-user {
+  color: #999;
+  font-size: 13px;
+}
+
+
+/* =========================
+   Content
+========================= */
+
+.content {
+  max-width: 750px;
+}
+
+.content h2 {
+  margin-top: 45px;
+  font-size: 24px;
+}
+
+.content h2:first-child {
+  margin-top: 0;
+}
+
+.content p {
+  color: #555;
+}
+
+
+/* =========================
+   Contact
+========================= */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.contact-form label {
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+
+  border: 1px solid #ddd;
+  border-radius: 6px;
+
+  outline: none;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+.site-footer {
+  margin-top: 80px;
+  padding: 50px 0 25px;
+
+  border-top: 1px solid #eee;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-logo {
+  margin: 0;
+  font-weight: 800;
+}
+
+.footer-copy {
+  margin: 5px 0 0;
+  color: #999;
+  font-size: 13px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 25px;
+
+  font-size: 13px;
+  color: #777;
+}
+
+.footer-nav a:hover {
+  color: #222;
+}
+
+.copyright {
+  margin-top: 40px;
+  color: #aaa;
+  font-size: 12px;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 800px) {
+
+  .container {
+    width: min(100% - 30px, 1100px);
+  }
+
+  .header-inner {
+    min-height: 60px;
+  }
+
+  .nav {
+    gap: 15px;
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 80px 0;
+  }
+
+  .search-section,
+  .movies-section,
+  .concept-section,
+  .content-section,
+  .review-section,
+  .movie-detail-section {
+    padding: 65px 0;
+  }
+
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .movie-detail {
+    grid-template-columns: 160px 1fr;
+    gap: 25px;
+  }
+
+  .movie-detail-info h1 {
+    font-size: 28px;
+  }
+
+  .filter-area {
+    flex-direction: column;
+  }
+
+  .filter-area select {
+    width: 100%;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 15px 0;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .movie-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .movie-detail-poster {
+    max-width: 220px;
+  }
+
+  .section-heading-row {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .search-box {
+    display: flex;
+  }
+
+  .search-box button {
+    width: 80px;
+  }
+}

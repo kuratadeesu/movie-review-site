@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>映画詳細 | 50文字映画レビュー</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">50文字映画レビュー</a>
+
+    <nav class="nav">
+      <a href="movies.html">映画を探す</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+  <section class="movie-detail-section">
+
+    <div class="container">
+
+      <div id="movieDetail"></div>
+
+    </div>
+
+  </section>
+
+
+  <section class="review-section">
+
+    <div class="container">
+
+      <div class="section-heading">
+        <p class="section-label">REVIEW</p>
+        <h2>50文字レビュー</h2>
+      </div>
+
+
+      <div class="review-form">
+
+        <label for="reviewText">
+          あなたの感想
+        </label>
+
+        <textarea
+          id="reviewText"
+          maxlength="50"
+          placeholder="この映画を50文字で表すなら？"
+        ></textarea>
+
+        <div class="review-form-footer">
+          <span id="charCount">0 / 50文字</span>
+          <span id="charMessage"></span>
+        </div>
+
+
+        <label>評価</label>
+
+        <div class="star-rating" id="starRating">
+
+          <button data-rating="1">★</button>
+          <button data-rating="2">★</button>
+          <button data-rating="3">★</button>
+          <button data-rating="4">★</button>
+          <button data-rating="5">★</button>
+
+        </div>
+
+
+        <button id="submitReview" class="btn btn-primary">
+          レビューを書く
+        </button>
+
+        <p class="form-note">
+          ※現在はデモ版です。レビューは保存されません。
+        </p>
+
+      </div>
+
+
+      <div class="existing-reviews">
+
+        <h3>みんなの50文字</h3>
+
+        <div class="review-card">
+
+          <div class="review-stars">
+            ★★★★★
+          </div>
+
+          <p>
+            観終わったあと、しばらく何もしたくなくなる映画。
+            余韻まで含めて最高だった。
+          </p>
+
+          <span class="review-user">
+            @movie_lovers
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+
+    <div>
+      <p class="footer-logo">50文字映画レビュー</p>
+      <p class="footer-copy">映画を、50文字で残す。</p>
+    </div>
+
+    <nav class="footer-nav">
+      <a href="about.html">About</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="contact.html">お問い合わせ</a>
+      <a href="terms.html">利用規約</a>
+    </nav>
+
+  </div>
+
+  <div class="container copyright">
+    © 2026 50文字映画レビュー
+  </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

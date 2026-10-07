@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>50文字映画レビュー</title>
+  <meta
+    name="description"
+    content="映画の感想を50文字で残す映画レビューサイト。短いからこそ伝わる、あなたの映画レビュー。"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">50文字映画レビュー</a>
+
+    <nav class="nav">
+      <a href="movies.html">映画を探す</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="hero-label">MOVIE REVIEW</p>
+
+      <h1>
+        映画を、<br>
+        <span>50文字</span>で残す。
+      </h1>
+
+      <p class="hero-description">
+        長すぎる感想はいらない。<br>
+        心に残ったことを、50文字に。
+      </p>
+
+      <a href="movies.html" class="btn btn-primary">
+        映画を探す
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Search -->
+  <section class="search-section">
+    <div class="container">
+
+      <div class="section-heading">
+        <p class="section-label">SEARCH</p>
+        <h2>映画を探す</h2>
+      </div>
+
+      <div class="search-box">
+        <input
+          type="text"
+          id="movieSearch"
+          placeholder="映画タイトルを検索..."
+        >
+        <button id="searchButton">検索</button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Popular movies -->
+  <section class="movies-section">
+    <div class="container">
+
+      <div class="section-heading section-heading-row">
+        <div>
+          <p class="section-label">MOVIES</p>
+          <h2>注目の映画</h2>
+        </div>
+
+        <a href="movies.html" class="text-link">
+          すべて見る →
+        </a>
+      </div>
+
+      <div id="movieGrid" class="movie-grid"></div>
+
+    </div>
+  </section>
+
+
+  <!-- Concept -->
+  <section class="concept-section">
+    <div class="container concept">
+
+      <p class="section-label">CONCEPT</p>
+
+      <h2>
+        50文字だから、<br>
+        本当に伝えたいことが残る。
+      </h2>
+
+      <p>
+        映画を観たあと、長いレビューを書くのはちょっと大変。
+        だから、このサイトでは感想を50文字に制限しています。
+      </p>
+
+      <a href="about.html" class="text-link">
+        このサイトについて →
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+
+    <div>
+      <p class="footer-logo">50文字映画レビュー</p>
+      <p class="footer-copy">
+        映画を、50文字で残す。
+      </p>
+    </div>
+
+    <nav class="footer-nav">
+      <a href="about.html">About</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="contact.html">お問い合わせ</a>
+      <a href="terms.html">利用規約</a>
+    </nav>
+
+  </div>
+
+  <div class="container copyright">
+    © 2026 50文字映画レビュー
+  </div>
+</footer>
+
+
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>
